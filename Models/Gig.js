@@ -38,7 +38,8 @@ const gigSchema = new mongoose.Schema({
     client: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User'
-    }
+    },
+    
 }, { timestamps: true });
 
 const Gig = mongoose.model('Gig', gigSchema);

@@ -38,7 +38,12 @@ const offerSchema = new mongoose.Schema({
     contact: {
         type: String,
         required: true
-    }
+    },
+    status: {
+        type: String,
+        default: 'active'
+    },
+    
 }, { timestamps: true });
 
 const Offer = mongoose.model('Offer', offerSchema);

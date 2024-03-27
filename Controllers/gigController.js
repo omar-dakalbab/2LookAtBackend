@@ -1,4 +1,4 @@
-const Gig = require("../models/Gig");
+const Gig = require("../Models/Gig");
 const Payment = require("../Models/Payment");
 const User = require("../Models/User");
 const { sendErrorEmail } = require("../Utils/errorEmail");

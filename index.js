@@ -19,6 +19,8 @@ const gigRoutes = require("./Routes/gigRoutes");
 const paymentRoutes = require("./Routes/paymentRoutes");
 const stripeRoutes = require("./Routes/stripeAccountRoutes");
 const Payment = require("./Models/Payment");
+const adminRoutes = require("./Routes/adminRoutes");
+
 
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
@@ -39,6 +41,8 @@ app.use("/category", categoryRoutes);
 app.use("/gig", gigRoutes);
 app.use("/payment", paymentRoutes);
 app.use("/stripe", stripeRoutes)
+app.use('/admin', adminRoutes);
+
 
 
 // WEEBHOOK FOR STRIPE
